@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="bg-white">
-  <nav class="flex items-center h-16 px-64 bg-white border-gray-200 fixed top-0 z-[99] w-full">
+  <nav
+    class="flex items-center h-16 xl:px-64 lg:px-32 md:px-16 bg-white border-gray-200 fixed top-0 z-[99] w-full border-b-2 border-[#E4E8EC]">
     <div class="flex items-center justify-between w-full">
       <!-- Logo - Tempati -->
       <a href="#" class="flex items-center">
@@ -30,9 +32,9 @@
   </nav>
 
   <!-- Jumbrotron -->
-  <div class="py-16 mt-16 px-64 bg-[#E7F3FF] flex justify-between relative">
-    <div class="space-y-4">
-      <div class="space-y-2 text-5xl font-bold">
+  <div class="py-16 mt-16 xl:px-64 lg:px-32 md:px-16 bg-[#E7F3FF] flex justify-between relative">
+    <div class="space-y-4 text-[#1D2022]">
+      <div class="space-y-2 lg:text-5xl md:text-4xl font-bold">
         <p>Saatnya pelanggan <br /></p>
         <p>bebas memesan menu <br /></p>
         <p>dari mana saja</p>
@@ -43,25 +45,39 @@
     </div>
     <!-- <div class="absolute bottom-0 right-0 mr-48"> -->
     <!-- IMAGE - Person -->
-    <div class="absolute bottom-0 right-0 mr-72">
+    <div class="absolute bottom-0 right-0 xl:mr-72 lg:mr-40 md:mr-20">
       <img src="assets/Person Cover.png" class="h-72" alt="Person" />
     </div>
   </div>
 
   <!-- Tempati Info -->
-  <div class="flex px-64 space-x-16 mt-28">
+  <div class="flex xl:px-64 lg:px-32 md:px-16 space-x-16 mt-28">
     <!-- IMAGE - Tempati Mockups -->
     <div class="">
       <img src="assets/Tempati Mockups.png" class="h-96" alt="Tempati Mockups" />
     </div>
-    <!-- Title Tempati -->
-    <div class="space-y-4">
-      <div class="space-y-2 text-5xl font-bold">
+
+    <div class="space-y-8 text-[#1D2022]">
+      <!-- Title Tempati -->
+      <div class="space-y-2 lg:text-5xl md:text-4xl font-bold ">
         <p>Reservasi dan order <br /></p>
         <p>melalui Tempati <br /></p>
       </div>
-      <!-- Points Tempati -->
-      <div></div>
+      <!-- Info Points Tempati -->
+      <div class="flex justify-between xl:text-base lg:text-sm md:text-xs">
+        <div class=" w-fit space-y-2.5">
+          <img src="assets/mini-info/tpti-1.png" class="h-16 m-auto" alt="Tempati Info" />
+          <p class="text-center font-medium">Reservasi tempat<br /> untuk nanti</p>
+        </div>
+        <div class="w-fit space-y-2.5">
+          <img src="assets/mini-info/tpti-2.png" class="h-16 m-auto" alt="Tempati Info" />
+          <p class="text-center font-medium">Order langsung<br /> dari meja</p>
+        </div>
+        <div class="w-fit space-y-2.5">
+          <img src="assets/mini-info/tpti-3.png" class="h-16 m-auto" alt="Tempati Info" />
+          <p class="text-center font-medium">Cari tempat<br /> nongkrong terdekat</p>
+        </div>
+      </div>
       <!-- Button -->
       <!-- Button - Tempati Biz -->
       <button type="button"
@@ -72,15 +88,29 @@
   </div>
 
   <!-- Tempati-Biz Info -->
-  <div class="flex justify-end px-64 space-x-16 mt-28">
-    <!-- Title Tempati -->
-    <div class="space-y-4 text-end">
-      <div class="space-y-2 text-5xl font-bold text-end">
+  <div class="flex justify-end xl:px-64 lg:px-32 md:px-16 space-x-16 mt-28">
+
+    <div class="space-y-8 text-end text-[#1D2022]">
+      <!-- Title Tempati -->
+      <div class="space-y-2 lg:text-5xl md:text-4xl font-bold text-end">
         <p>Kelola bisnis melalui <br /></p>
         <p>Tempati-biz <br /></p>
       </div>
-      <!-- Points Tempati -->
-      <div></div>
+      <!-- Info Points Tempati Biz -->
+      <div class="flex justify-between flex-row-reverse xl:text-base lg:text-sm md:text-xs">
+        <div class="w-fit space-y-2.5">
+          <img src="assets/mini-info/biz-1.png" class="h-16 m-auto" alt="Tempati Info" />
+          <p class="text-center font-medium">Kelola reservasi<br /> dengan mudah</p>
+        </div>
+        <div class="w-fit space-y-2.5">
+          <img src="assets/mini-info/biz-2.png" class="h-16 m-auto" alt="Tempati Info" />
+          <p class="text-center font-medium">Kelola pemasukan<br /> dengan lengkap</p>
+        </div>
+        <div class="w-fit space-y-2.5">
+          <img src="assets/mini-info/biz-3.png" class="h-16 m-auto" alt="Tempati Info" />
+          <p class="text-center font-medium">Kelola produk<br /> usaha</p>
+        </div>
+      </div>
       <!-- Button -->
       <!-- Button - Tempati Biz -->
       <button type="button"
@@ -95,16 +125,16 @@
   </div>
 
   <!-- Tempati-Biz Plan Info -->
-  <div class="relative px-64 py-32 space-y-16 overflow-hidden mt-28">
+  <div class="relative xl:px-64 lg:px-32 md:px-16 py-32 space-y-16 overflow-hidden mt-28">
 
     <!-- IMAGE - Tempati Mockups -->
-    <div class="absolute left-0 -bottom-[300px] -z-10">
-      <img src="assets/Blue Chair.png" class=" h-[1000px]" alt="Tempati Biz Mockups" />
+    <div class="absolute left-0 xl:-bottom-[300px] lg:-bottom-[250px] md:-bottom-[150px]  -z-10">
+      <img src="assets/Blue Chair.png" class=" xl:h-[1000px] lg:h-[800px] md:h-[500px]" alt="Tempati Biz Mockups" />
     </div>
 
     <!-- Title -->
     <div class="space-y-4 text-center">
-      <div class="space-y-2 text-5xl font-bold">
+      <div class="space-y-2 lg:text-5xl md:text-4xl font-bold  text-[#1D2022]">
         <p>Jalankan bisnismu dengan<br /></p>
         <p>Tempati-Biz<br /></p>
       </div>
@@ -117,17 +147,18 @@
 
     <div class="flex justify-between ">
       <!-- Free Plan -->
-      <div class=" bg-[#E7F3FF] p-5 space-y-5 rounded-[20px]  flex flex-col">
+      <div
+        class=" bg-[#E7F3FF] 2xl:p-5 xl:p-4 lg:p-3 md:p-2.5 2xl:space-y-5 xl:space-y-4 lg:space-y-3 md:space-y-2.5 rounded-[20px] flex flex-col">
         <!-- Card Title & Caption -->
         <div class="text-center">
           <!-- Plan Name -->
-          <p class="text-3xl font-bold">Free</p>
+          <p class="xl:text-3xl lg:text-2xl font-bold text-[#1D2022]">Free</p>
           <!-- Prize -->
-          <p class="text-lg font-medium text-[#0F87FF]">Free used</p>
+          <p class="xl:text-xl lg:text-lg md:text-base font-medium text-[#0F87FF]">Free used</p>
         </div>
         <!-- Fitur -->
-        <div class="text-lg font-medium p-2.5 bg-white rounded-[15px] grow">
-          <ul class="list-disc list-inside w-72">
+        <div class="2xl:text-lg xl:text-base lg:text-sm md:text-xs font-medium p-2.5 bg-white rounded-[15px] grow">
+          <ul class="list-disc list-inside 2xl:w-72 xl:w-60 lg:w-52 md:w-44 text-[#343A40]">
             <li>Menu Digital</li>
             <li>Profile Merchant</li>
             <li>Manajemen Produk</li>
@@ -137,17 +168,18 @@
       </div>
 
       <!-- Early Adopter -->
-      <div class=" bg-[#E7F3FF] p-5 space-y-5 rounded-[20px] flex flex-col">
+      <div
+        class=" bg-[#E7F3FF] 2xl:p-5 xl:p-4 lg:p-3 md:p-2.5 2xl:space-y-5 xl:space-y-4 lg:space-y-3 md:space-y-2.5 rounded-[20px] flex flex-col">
         <!-- Card Title & Caption -->
         <div class="text-center">
           <!-- Plan Name -->
-          <p class="text-3xl font-bold">Early Adopter</p>
+          <p class="xl:text-3xl lg:text-2xl font-bold text-[#1D2022]">Early Adopter</p>
           <!-- Prize -->
-          <p class="text-lg font-medium text-[#0F87FF]">Rp 49.500/bulan</p>
+          <p class="xl:text-xl lg:text-lg md:text-base  font-medium text-[#0F87FF]">Rp 49.500/bulan</p>
         </div>
         <!-- Fitur -->
-        <div class="text-lg font-medium p-2.5 bg-white rounded-[15px] grow">
-          <ul class="list-disc list-inside w-72">
+        <div class="2xl:text-lg xl:text-base lg:text-sm md:text-xs font-medium p-2.5 bg-white rounded-[15px] grow">
+          <ul class="list-disc list-inside 2xl:w-72 xl:w-60 lg:w-52 md:w-44 text-[#343A40]">
             <li>Menu Digital</li>
             <li>Profile Merchant</li>
             <li>Manajemen Produk</li>
@@ -160,17 +192,18 @@
       </div>
 
       <!-- Plus -->
-      <div class=" bg-[#E7F3FF] p-5 space-y-5 rounded-[20px]">
+      <div
+        class=" bg-[#E7F3FF] 2xl:p-5 xl:p-4 lg:p-3 md:p-2.5 2xl:space-y-5 xl:space-y-4 lg:space-y-3 md:space-y-2.5 rounded-[20px] flex flex-col">
         <!-- Card Title & Caption -->
         <div class="text-center">
           <!-- Plan Name -->
-          <p class="text-3xl font-bold">Plus</p>
+          <p class="xl:text-3xl lg:text-2xl  md:text-xl font-bold text-[#1D2022]">Plus</p>
           <!-- Prize -->
-          <p class="text-lg font-medium text-[#0F87FF]">Rp 99.000/bulan</p>
+          <p class="xl:text-xl lg:text-lg md:text-base font-medium text-[#0F87FF]">Rp 99.000/bulan</p>
         </div>
         <!-- Fitur -->
-        <div class="text-lg font-medium p-2.5 bg-white rounded-[15px]">
-          <ul class="list-disc list-inside w-72">
+        <div class="2xl:text-lg xl:text-base lg:text-sm md:text-xs font-medium p-2.5 bg-white rounded-[15px]">
+          <ul class="list-disc list-inside 2xl:w-72 xl:w-60 lg:w-52 md:w-44 text-[#343A40]">
             <li>Menu Digital</li>
             <li>Profile Merchant</li>
             <li>Manajemen Produk</li>
@@ -186,7 +219,22 @@
     </div>
   </div>
 
-  <footer class="h-64 bg-[#E7F3FF]">
+  <footer class="bg-[#E7F3FF] py-8 xl:px-64 lg:px-32 md:px-16 justify-between flex items-center">
+    <div class="flex space-x-4">
+      <img src="assets/Tempati Logo.png" class="mr-3 h-8" alt="Tempati Logo" />
+      <div class="h-10 w-0.5 rounded-full bg-[#495057]"></div>
+      <img src="assets/Tempati Biz Logo.png" class="mr-3 h-10" alt="Tempati Logo" />
+    </div>
+
+    <div class="flex space-x-8 items-center">
+      <p class="text-lg font-medium text-[#495057]">Temukan Kami</p>
+      <a href="mailto: info@tempati.id" class="fa fa-envelope text-[#0F87FF]" style="font-size:24px"></a>
+      <a href="https://www.instagram.com/tempati.id/?hl=id" class="fa fa-instagram text-[#0F87FF]"
+        style="font-size:24px"></a>
+      <a href="https://www.facebook.com/tempati.id/" class="fa fa-facebook-f text-[#0F87FF]" style="font-size:24px"></a>
+      <a href="https://www.linkedin.com/company/tempati/about/" class="fa fa-linkedin-square text-[#0F87FF]"
+        style="font-size:24px"></a>
+    </div>
 
   </footer>
 
